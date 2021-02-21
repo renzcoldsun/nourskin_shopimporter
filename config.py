@@ -1,0 +1,1 @@
+connection_string = "mysql://nourskin:nourskin1342@localhost:3306/nourskin"
