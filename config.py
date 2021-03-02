@@ -1,1 +1,1 @@
-from configparser import ConfigParserconfig = ConfigParser()
+import osfrom configparser import ConfigParserconfig = ConfigParser()if os.path.exists(os.path.join(os.path.dirname(__file__), 'config.ini')):    #print("Using path ",os.path.join(os.path.dirname(__file__), 'config.ini'))    config.read(os.path.join(os.path.dirname(__file__), 'config.ini'))else:    #print("Using path ",os.path.join(os.path.dirname(__file__), 'default.ini'))    config.read(os.path.join(os.path.dirname(__file__), 'default.ini'))
