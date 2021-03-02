@@ -4,9 +4,9 @@ from config import Config
 
 c = Config()
 wcapi = wooo_api(
-                url="http://localhost",
-                consumer_key = api_consumer_key,
-                consumer_secret = api_consumer_secret,
+                url=c.woo_get_url(),
+                consumer_key = c.woo_get_consumer_key(),
+                consumer_secret = c.woo_get_consumer_secret(),
                 version = "wc/v3"
                 )
 
