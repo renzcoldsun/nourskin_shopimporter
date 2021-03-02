@@ -2,7 +2,11 @@ from sqlalchemy import create_engine
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy import Column, Integer, String, Float
 from sqlalchemy.orm import sessionmaker
-from config import connection_string
+from config import Config
+
+c = Config()
+connection_string = c.get_database_connection_string()
+
 
 engine = create_engine(connection_string)
 Base = declarative_base()

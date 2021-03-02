@@ -1,10 +1,8 @@
 import models
-
 from woocommerce import API as wooo_api
+from config import Config
 
-api_consumer_key = "ck_f65e9c5b696f93404da8cf79fdfd98fe5da293cc"
-api_consumer_secret = "cs_92a2c541f735b0ac90000875194b6a961321b462"
-
+c = Config()
 wcapi = wooo_api(
                 url="http://localhost",
                 consumer_key = api_consumer_key,
